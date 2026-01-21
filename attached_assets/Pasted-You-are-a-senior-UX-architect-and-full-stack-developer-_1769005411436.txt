@@ -1,0 +1,115 @@
+You are a senior UX architect and full-stack developer.
+
+Redesign the ANALYTICS section of a School Management System Admin Panel.
+
+The current analytics page feels cluttered.
+Fix it by introducing a clean, role-based insight flow.
+
+========================
+CORE UX LOGIC (MANDATORY)
+========================
+
+The Analytics page must FIRST ask:
+"What do you want to analyze?"
+
+Provide an Insight Type selector at the top:
+- Teacher Insights
+- Student Insights
+
+Only show data AFTER an option is selected.
+
+========================
+TEACHER INSIGHTS FLOW
+========================
+
+When "Teacher Insights" is selected:
+
+🔹 Filters:
+- Select Teacher (dropdown)
+- Select Date Range (Today / Week / Month / Custom)
+
+🔹 Summary Cards:
+- Attendance Percentage
+- Total Classes Taken
+- Quizzes Created
+- Leaves Taken
+- Performance Rank
+- Average Class Score
+
+🔹 Detailed Sections:
+- Attendance trend chart
+- Classes assigned list
+- Quiz activity breakdown
+- Class-wise performance comparison
+
+🔹 Alerts:
+- Low attendance warning
+- Missed classes
+- No quizzes created in selected period
+
+========================
+STUDENT INSIGHTS FLOW
+========================
+
+When "Student Insights" is selected:
+
+🔹 Filters:
+- Select Class (mandatory)
+- Select Student (optional)
+- Select Date Range
+
+------------------------
+
+CASE 1: Class selected, Student NOT selected
+
+Show Class Performance View:
+- Class Average Score
+- Class Attendance %
+- Top 3 Students
+- Lowest Performing Students
+- Subject-wise performance chart
+
+------------------------
+
+CASE 2: Class AND Student selected
+
+Show Individual Student Performance:
+- Student Attendance %
+- Total Quizzes Attempted
+- Average Score
+- Highest Score
+- Lowest Score
+- Subject-wise marks
+- Performance trend chart
+
+🔹 Student Alerts:
+- Low attendance
+- Poor performance trend
+- Missed quizzes
+
+========================
+UI & UX REQUIREMENTS
+========================
+
+- Modern, premium UI
+- Clear visual separation
+- No mixed teacher/student data
+- Smooth transitions between views
+- Use cards, charts, and clean spacing
+- Responsive layout
+- Dark & Light mode ready
+
+========================
+TECHNICAL REQUIREMENTS
+========================
+
+- React + Tailwind CSS
+- Modular components
+- Conditional rendering based on selection
+- Dummy/mock data allowed
+- Backend API-ready structure
+- Clean, readable code
+
+Build the COMPLETE redesigned Analytics page.
+Do NOT mix teacher and student insights in the same view.
+Do NOT skip logic.
