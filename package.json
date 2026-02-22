@@ -12,6 +12,8 @@
     "dev:backend": "cd backend && npm run dev",
     "build:frontend": "cd frontend && npm run build",
     "build:backend": "cd backend && npm run build",
+    "build": "npm install --workspaces --include=dev && cd backend && npm run build",
+    "start": "cd backend && npm start",
     "check": "npm run check --workspaces"
   },
   "description": "Asset Manager - Full-stack web application"
