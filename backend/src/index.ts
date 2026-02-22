@@ -110,7 +110,10 @@ app.use((req, res, next) => {
   // =========================
   // Production Static Serving
   // =========================
-  if (process.env.NODE_ENV === "production") {
+  if (
+    process.env.NODE_ENV === "production" &&
+    process.env.SERVE_FRONTEND === "true"
+  ) {
     serveStatic(app);
   }
 
